@@ -1,12 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
-import Profile from './.expo/src/pages/profile'; 
+import { StyleSheet } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import Register from './.expo/components/registerPage/register';
 
 export default function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Profile />
+        <Register />
       </SafeAreaView>
     </SafeAreaProvider>
   );
@@ -14,7 +14,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,               
-    backgroundColor: '#FAF7F0',
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
